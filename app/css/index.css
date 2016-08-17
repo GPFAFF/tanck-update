@@ -1,0 +1,131 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+body {
+  text-align: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font: 16px/26px "Open Sans", sans-serif; }
+
+.main {
+  padding: 30px; }
+
+header {
+  margin: 0;
+  padding: 20px; }
+
+h1 {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 60px;
+  margin-bottom: 10px; }
+
+h2 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif; }
+
+h4 {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif; }
+
+nav {
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 20px 0 10px 0; }
+
+ul {
+  padding: 0; }
+  ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px; }
+    ul li a {
+      color: black;
+      text-decoration: none; }
+      ul li a:hover {
+        color: #ccc;
+        transition: 0.3s ease-in-out; }
+
+section {
+  background-color: white;
+  margin: 0 auto;
+  width: 85%;
+  /* Slider Stuff */ }
+  section .slick-slide {
+    transition: all 300ms ease;
+    outline: none !important; }
+    section .slick-slide [data-aria="hidden"] {
+      width: 50%;
+      height: 50%; }
+    section .slick-slide > img {
+      border: 2px solid transparent;
+      width: 90%; }
+      section .slick-slide > img:active, section .slick-slide > img:hover {
+        border: 2px solid black; }
+    section .slick-slide .slick-current img {
+      opacity: 1; }
+
+section.about-me {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px; }
+
+footer {
+  display: block; }
+  footer i {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px; }
+  footer .share {
+    list-style-type: none;
+    margin: 20px 0;
+    z-index: 10;
+    max-width: 100%;
+    text-align: center; }
+  footer .visually-hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  footer .share li {
+    position: relative;
+    display: inline-block; }
+  footer .share li #social-link {
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    width: 50px;
+    height: 60px;
+    padding: 15px 20px; }
+
+@media (max-width: 768px) and (min-width: 320px) {
+  h1 {
+    line-height: 0.7; }
+  nav {
+    padding: 0; }
+    nav ul > li {
+      font-size: 16px;
+      padding: 0 5px; }
+  footer .share {
+    padding: 0;
+    margin-top: 20px; }
+    footer .share li {
+      height: 60px;
+      padding: 0px;
+      display: inline-block;
+      width: 35px; }
+      footer .share li #social-link {
+        padding: 0;
+        width: 100%;
+        margin-top: 30px; } }
